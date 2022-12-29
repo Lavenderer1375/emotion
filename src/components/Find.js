@@ -12,6 +12,7 @@ const Find = () => {
             marginTop: '2rem',
             marginBottom: '2rem',
           }}
+          title="map"
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=35.710978,%2051.396134&t=&z=15&ie=UTF8&iwloc=&output=embed"
         ></iframe>
