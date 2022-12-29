@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="shadow-md w-full top-0 left-0">
+    <nav className="shadow-md w-full top-0 left-0 bg-white">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center font[Poppins] text-stone-800 drop-shadow-xl">
           <span>
@@ -14,7 +14,7 @@ const Navbar = () => {
               style={{ height: '4rem', width: '4rem' }}
             />
           </span>
-          <h1 className="text-orange-600 ml-3">emotion</h1>
+          <h1 className="text-orange-600 ml-3 text-4xl">emotion</h1>
         </div>
         <div
           onClick={() => setOpen(!open)}
