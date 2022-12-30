@@ -14,7 +14,7 @@ const Contact = () => {
           <li>Adress: Hijab Av, Keshavarz Blv, Vali-e-asr Sq, Tehran, Iran</li>
         </ul>
       </div>
-      <h1 className="flex justify-end text-orange-600 ml-3 text-4xl font-bold pb-5">emotion</h1>
+      <h1 className="flex md:justify-end justify-center text-orange-600 ml-3 text-4xl font-bold pb-5">emotion</h1>
       <div className="flex justify-center pb-2">
         <p>Developed by Kianush Abedi ©</p>
       </div>
