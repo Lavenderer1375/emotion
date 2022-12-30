@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/emotion/static/css/main.e2797ac1.css",
-    "main.js": "/emotion/static/js/main.cb7220a6.js",
+    "main.css": "/emotion/static/css/main.ad7b3a86.css",
+    "main.js": "/emotion/static/js/main.bf6ff531.js",
     "static/js/787.b1ec6a5d.chunk.js": "/emotion/static/js/787.b1ec6a5d.chunk.js",
     "static/media/_CityMag-the-people-vs-coffee-13-850x510.jpg": "/emotion/static/media/5c4faa3c2387eca5a9c65725_CityMag-the-people-vs-coffee-13-850x510.6f2cc976e321e40f9a8e.jpg",
     "static/media/_CityMag-the-people-vs-coffee-3-850x510.jpg": "/emotion/static/media/5c4faa2f857698abddd42a6a_CityMag-the-people-vs-coffee-3-850x510.886bbae90801b77ac1bf.jpg",
     "static/media/_CityMag-the-people-vs-coffee-5-850x510.jpg": "/emotion/static/media/5c4fa9ff65f21a26b32d7283_CityMag-the-people-vs-coffee-5-850x510.581ae0aea5e967eb3172.jpg",
     "static/media/Logo.png": "/emotion/static/media/Logo.2d0d8964c48b932a2794.png",
     "index.html": "/emotion/index.html",
-    "main.e2797ac1.css.map": "/emotion/static/css/main.e2797ac1.css.map",
-    "main.cb7220a6.js.map": "/emotion/static/js/main.cb7220a6.js.map",
+    "main.ad7b3a86.css.map": "/emotion/static/css/main.ad7b3a86.css.map",
+    "main.bf6ff531.js.map": "/emotion/static/js/main.bf6ff531.js.map",
     "787.b1ec6a5d.chunk.js.map": "/emotion/static/js/787.b1ec6a5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2797ac1.css",
-    "static/js/main.cb7220a6.js"
+    "static/css/main.ad7b3a86.css",
+    "static/js/main.bf6ff531.js"
   ]
 }
