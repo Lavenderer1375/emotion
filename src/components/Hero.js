@@ -5,19 +5,6 @@ import Logo from '../assets/Logo.png';
 const Hero = () => {
   return (
     <div className="flex mb-5">
-      <span className="flex">
-        <img
-          src={Logo}
-          alt="logo"
-          style={{
-            height: '20rem',
-            width: '20rem',
-            position: 'absolute',
-            marginLeft: '30rem',
-            marginTop: '1rem',
-          }}
-        />
-      </span>
       <div className="flex items-center justify-center">
         <h2 className="md:text-9xl text-6xl text-orange-400 absolute">
           emotion cafe
