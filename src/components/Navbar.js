@@ -1,8 +1,16 @@
 import React from 'react';
 import Logo from '../assets/Logo.png';
 import { useState } from 'react';
+import { RefContext } from './RefContext';
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    RefContext.current?.scrollIntoView({ behavior: 'smooth' });
+    console.log("clicked");
+  };
+
   return (
     <nav className="shadow-md w-full top-0 left-0 bg-white">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
@@ -27,13 +35,22 @@ const Navbar = () => {
             open ? 'top-20' : 'top-[-490px]'
           } `}
         >
-          <li className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7">
+          <li
+            onClick={handleClick}
+            className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7"
+          >
             Our Menu
           </li>
-          <li className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7">
+          <li
+            onClick={handleClick}
+            className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7"
+          >
             Find Us
           </li>
-          <li className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7">
+          <li
+            onClick={handleClick}
+            className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7"
+          >
             Contact Us
           </li>
         </ul>
