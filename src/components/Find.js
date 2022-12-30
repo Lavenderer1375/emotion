@@ -8,7 +8,7 @@ const Find = () => {
           style={{
             width: '90%',
             height: '400px',
-            marginLeft: '1.5rem',
+            marginLeft: '1rem',
             marginTop: '2rem',
             marginBottom: '2rem',
           }}
@@ -17,7 +17,7 @@ const Find = () => {
           src="https://maps.google.com/maps?q=35.710978,%2051.396134&t=&z=15&ie=UTF8&iwloc=&output=embed"
         ></iframe>
       </div>
-      <div className="md:flex flex-col md:items-start justify-center md:text-4xl text-2xl font-bold md:mr-5 mb-10 text-center md:text-left text-orange-900">
+      <div className="md:flex flex-col md:items-start justify-center md:text-4xl text-xl font-bold md:mr-5 mb-10 text-center md:text-left text-orange-900">
         <h2>This is where we are staying for now!</h2>
         <p className='text-lg mt-2'>come and join us for a good coffee.</p>
       </div>
