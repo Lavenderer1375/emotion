@@ -1,14 +1,14 @@
 import React from 'react';
 import Logo from '../assets/Logo.png';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const ref = useContext(RefContext);
 
   const handleClick = () => {
-    RefContext.current?.scrollIntoView({ behavior: 'smooth' });
-    console.log("clicked");
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

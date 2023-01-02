@@ -1,9 +1,13 @@
 import React from 'react';
+import { useContext } from 'react';
+import { RefContext } from './RefContext';
 
 const Find = () => {
+  const ref = useContext(RefContext);
+
   return (
     <div className="grid grid-flow-row md:grid-cols-2 bg-orange-200 shadow-xl">
-      <div>
+      <div ref={ref}>
         <iframe
           style={{
             width: '90%',
@@ -19,7 +23,7 @@ const Find = () => {
       </div>
       <div className="md:flex flex-col md:items-start justify-center md:text-4xl text-xl font-bold md:mr-5 mb-10 text-center md:text-left text-orange-900">
         <h2>This is where we are staying for now!</h2>
-        <p className='text-lg mt-2'>come and join us for a good coffee.</p>
+        <p className="text-lg mt-2">come and join us for a good coffee.</p>
       </div>
     </div>
   );

@@ -3,11 +3,12 @@ import { useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Menu = () => {
-  const [refrence, setRef] = useContext(RefContext) 
+  const ref = useContext(RefContext)
+
   return (
-    <div ref={setRef} className="items-center justify-center text-center my-20 px-5">
+    <div className="items-center justify-center text-center my-20 px-5">
       <div className="mb-10 text-orange-500">
-        <h1 className="md:text-6xl text-5xl mb-5 font-bold">
+        <h1 ref={ref} className="md:text-6xl text-5xl mb-5 font-bold">
           Here's the menu!
         </h1>
         <h1 className="md:text-3xl">
