@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../assets/Logo.png';
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Navbar = () => {
