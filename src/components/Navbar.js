@@ -1,12 +1,12 @@
 import React from 'react';
 import Logo from '../assets/Logo.png';
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Navbar = () => {
 
   const [open, setOpen] = useState(false);
-  const [refMenu, refFind, refContact, handleClick] = useContext(RefContext);
+  const [initialValue] = useContext(RefContext);
   
   // const handleClick = () => {
   //   ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -38,19 +38,19 @@ const Navbar = () => {
             } `}
         >
           <li
-            onClick={() => handleClick(refMenu)}
+            onClick={() => initialValue.handleClick(initialValue.refMenu)}
             className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7"
           >
             Our Menu
           </li>
           <li
-            onClick={() => handleClick(refFind)}
+            onClick={() => initialValue.handleClick(initialValue.refFind)}
             className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7"
           >
             Find Us
           </li>
           <li
-            onClick={() => handleClick(refContact)}
+            onClick={() => initialValue.handleClick(initialValue.refContact)}
             className="text-orange-600 hover:text-gray-400 duration-300 md:ml-8 md:text-xl text-lg md:my-0 my-7"
           >
             Contact Us
