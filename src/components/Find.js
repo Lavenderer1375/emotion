@@ -3,11 +3,13 @@ import { useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Find = () => {
-  const {ref1} = useContext(RefContext);
-  console.log(ref1);
+  const [refMenu, refFind, refContact, handleClick] = useContext(RefContext);
+  // console.log(ref);
   return (
     <div className="grid grid-flow-row md:grid-cols-2 bg-orange-200 shadow-xl">
-      <div ref={ref1}>
+      <div
+        ref={refFind}
+      >
         <iframe
           style={{
             width: '90%',
