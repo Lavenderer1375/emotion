@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Contact = () => {
-  const [refMenu, refFind, refContact, handleClick] = useContext(RefContext);
+  const [initialValue] = useContext(RefContext);
 
   const toTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -33,7 +33,7 @@ const Contact = () => {
         </ul>
       </div>
       <h1
-        ref={refContact}
+        ref={initialValue.refContact}
         className="flex md:justify-end justify-center text-orange-600 ml-3 text-4xl font-bold pb-5"
       >
         emotion
