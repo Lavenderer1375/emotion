@@ -3,15 +3,14 @@ import { useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Menu = () => {
-  const [initialValue] = useContext(RefContext)
-    ;
+  const [initialValue] = useContext(RefContext);
   return (
     <div className="items-center justify-center text-center my-20 px-5">
       <div className="mb-10 text-orange-500">
         <h1
-
           ref={initialValue.refMenu}
-          className="md:text-6xl text-5xl mb-5 font-bold">
+          className="md:text-6xl text-5xl mb-5 font-bold"
+        >
           Here's the menu!
         </h1>
         <h1 className="md:text-3xl">

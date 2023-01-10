@@ -3,12 +3,10 @@ import { useContext } from 'react';
 import { RefContext } from './RefContext';
 
 const Find = () => {
-  const [initialValue] = useContext(RefContext)
+  const [initialValue] = useContext(RefContext);
   return (
     <div className="grid grid-flow-row md:grid-cols-2 bg-orange-200 shadow-xl">
-      <div
-        ref={initialValue.refFind}
-      >
+      <div ref={initialValue.refFind}>
         <iframe
           style={{
             width: '90%',
